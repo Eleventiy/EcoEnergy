@@ -1,0 +1,30 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		// Оптимизация под мобильные устройства
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		// Загрузка шрифтов
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400&subset=cyrillic,cyrillic-ext,latin-ext', rel='stylesheet')
+		// Загрузка стилей
+		link(href='static/css/bootstrap-grid.min.css', rel='stylesheet')
+		link(href='static/css/style.css', rel='stylesheet')
+		//link(href='static/css/responsive.css', rel='stylesheet')
+		link(href='static/css/flexslider.css', rel='stylesheet')
+
+	title
+		block title
+
+	body
+		//include ../modules/header
+		block content
+		include ../modules/footer
+
+
+	// Загрузка скриптов
+	script(src='http://code.jquery.com/jquery-3.2.1.min.js')
+	script(src='static/js/jquery.flexslider.js')
+	script(src='static/js/modernizr.js')
+	script(src='static/js/jcanvas.min.js')
+	script(src='static/js/main.js')

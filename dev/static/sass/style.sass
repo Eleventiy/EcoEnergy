@@ -1,0 +1,750 @@
+html, body
+	width: 100%
+
+body
+	margin: 0
+	font-family: "Roboto", sans-serif
+	font-size: 16px
+	font-weight: 300
+	line-height: 1.43
+	color: #0c0d10
+
+img
+	max-width: 100%
+	height: auto
+
+::-webkit-input-placeholder
+  color: #ffffff
+::-moz-placeholder
+  color: #ffffff
+//:-ms-input-placeholder
+//  color: #ffffff
+//:-moz-placeholder
+//  color: #ffffff
+
+@import "modules/header"
+
+.wrapper
+	max-width: 1920px
+	margin: 0 auto
+	position: relative
+	background: #21140e url('../img/background.png') no-repeat
+	-webkit-background-size: contain
+	background-size: contain
+	height: 1070px
+	overflow: hidden
+	.header-bg-text
+		position: absolute
+		top: 0
+		left: 60px
+		opacity: 0
+	.content-header
+		max-width: 1920px
+		width: 100%
+		margin: auto
+		padding-top: 20px
+		position: absolute
+		top: 0
+		.nav
+			width: 100%
+			margin: 0
+			li
+				display: inline-block
+				color: white
+				list-style-type: none
+			.logo
+				position: relative
+				a
+					text-decoration: none
+				&-text
+					position: absolute
+					right: 60px
+					bottom: 5px
+					color: #b7c24a
+					font-family: "Roboto", sans-serif
+					font-size: 18px
+					font-weight: 300
+					line-height: 9px
+			.contacts
+				font-family: 'Roboto', sans-serif
+				font-weight: 300
+				font-size: 17px
+				//width: 41.5%
+				line-height: 21px
+				letter-spacing: 1.2px
+				p
+					&:first-child
+						margin-bottom: 28px
+					&:last-child
+						position: relative
+						top: -20px
+			.search
+				//width: 26.7%
+				input
+					width: 200px
+					height: 30px
+					background: none !important
+					-moz-background: none !important
+					-webkit-background: none !important
+					-ms-background: none !important
+					-o-background: none !important
+					border: none
+					border-bottom: 1px solid white
+					font-family: 'Roboto', sans-serif
+					font-weight: 300
+					font-size: 17px
+					color: white
+					outline: none !important
+					position: relative
+					top: -38px
+					padding-bottom: 6px
+			.change-language
+				//width: 125px
+				//height: 125px
+				background: black
+				position: relative
+				top: -84px
+				opacity: 0
+				select
+					background: none !important
+					-moz-background: none !important
+					-webkit-background: none !important
+					-ms-background: none !important
+					-o-background: none !important
+					color: white
+					font-size: 18px
+					font-family: 'Roboto', sans-serif
+					font-weight: 300
+					border: none !important
+					-moz-border: none !important
+					-webkit-border: none !important
+					-ms-border: none !important
+					-o-border: none !important
+					outline: none !important
+					position: relative
+					top: 49px
+					left: 38px
+		.slider
+			max-width: 79%
+			position: relative
+			#slider
+				width: 70%
+				float: right
+				background: none
+				margin-top: -46px
+				border: none
+				.slides
+					.slide-li
+						.info-enclosed
+							max-width: 548px
+							width: 100%
+							margin-left: 44.2%
+							li
+								margin-left: 1px
+								width: 100%
+								.enclosed-ul
+									width: 232px
+									height: 274px
+									border: 2px solid white
+									opacity: 1
+									animation-name: opacity
+									animation-duration: 1.3s
+									li
+										&:first-child
+											margin-top: 58px
+										margin-left: 7px
+										list-style-type: none
+										list-style-image: url('../img/check.png')
+										p
+											font-family: 'Roboto', sans-serif
+											font-weight: 300
+											font-size: 18px
+											width: 274px
+											color: white
+											padding-bottom: 4px
+							.image-li
+								margin-left: 0
+								float: right
+								margin-top: -2px
+								.image-slider
+									float: right
+									background-image: url('../img/image-slider.png')
+									background-repeat: no-repeat
+									background-size: cover
+									width: 274px
+									height: 274px
+									border: 2px solid white
+									margin-right: -6px
+									opacity: 1
+									animation-name: opacity
+									animation-duration: 0.9s
+						.sub-title
+							clear: both
+							font-size: 20px
+							font-family: 'Roboto', sans-serif
+							font-weight: 700
+							color: #b7c24a
+							position: relative
+							top: -74px
+							margin-left: -7px
+							animation-name: opacity
+							animation-duration: 1.8s
+						h1
+							font-family: 'Roboto', sans-serif
+							font-size: 55px
+							font-weight: 700
+							color: white
+							position: relative
+							top: -104px
+							margin-left: -7px
+							animation-name: opacity
+							animation-duration: 1.8s
+						.read-more-button
+							text-align: center
+							line-height: 60px
+							display: block
+							width: 274px
+							height: 60px
+							color: white
+							text-transform: uppercase
+							font-family: 'Roboto', sans-serif
+							font-weight: 400
+							font-size: 20px
+							border: 2px solid white
+							transition: 0.3s ease-in-out
+							margin-top: -100px
+							animation-name: opacity
+							animation-duration: 2s
+							margin-left: -6px
+							&:hover
+								border-color: #b7c24a
+								color: #b7c24a
+					.slide-4 .image-slider
+						float: right
+						background-image: url('../img/contact-us-support.png') !important
+						background-repeat: no-repeat
+						background-size: cover
+						width: 274px
+						height: 274px
+			#carousel
+				margin-top: 30px
+				margin-left: 5.1%
+				width: 29%
+				background: none
+				border: none
+				.slides li
+					display: block
+					float: none !important
+					line-height: 67px
+				.flex-direction-nav
+					display: none !important
+			.flex-direction-nav
+				display: none !important
+			.flexslider-controls .flex-control-nav
+				width: 200px
+				margin-left: 3.3%
+				position: relative
+				top: 20px
+				.flex-active
+					p
+						border: 2px solid white
+						color: #b7c24a
+						font-weight: 500
+					span
+						opacity: 1
+				li
+					text-align: left
+					width: 274px
+					line-height: 49px
+					p
+						width: 100%
+						height: 45px
+						padding-left: 20px
+						font-size: 17px
+						font-family: 'Roboto', sans-serif
+						font-weight: 300
+						color: white
+						transition: 0.18s ease-in-out
+						span
+							opacity: 0
+							transition: 0.4s ease-in-out
+							font-family: 'Roboto', sans-serif !important
+							font-weight: 300 !important
+							color: white !important
+						&:before
+							content: '— '
+						&:hover
+							font-weight: 500
+							color: #b7c24a
+							border: 2px solid white
+							span
+								opacity: 1
+							opacity: 1
+
+@keyframes opacity
+	0%
+		opacity: 0
+
+	20%
+		opacity: 0
+
+	100%
+		opacity: 1
+
+
+canvas
+	max-width: 1920px
+
+.section-1
+	max-width: 1920px
+	margin: auto
+	position: relative
+	&:after
+		content: url('../img/section-1(bg-text).png')
+		position: absolute
+		top: 405px
+		right: 0
+		opacity: 0.21
+	&:before
+		content: url('../img/section-1(bg-image).png')
+		position: absolute
+		top: 782px
+		left: 172px
+	.container-content
+		max-width: 1090px
+		margin: auto
+		padding-top: 124px
+		.top
+			position: relative
+			.text-box
+				width: 544px
+				display: inline-block
+				float: left
+				position: relative
+				h2
+					font-size: 55px
+					font-family: 'Roboto', sans-serif
+					font-weight: 300
+					color: #6c6e70
+					line-height: 60px
+					max-width: 500px
+					margin: 0
+					text-transform: uppercase
+					padding-left: 32px
+				p
+					font-size: 20px
+					font-family: 'Roboto', sans-serif
+					font-weight: 400
+					max-width: 474px
+					padding-left: 33px
+					margin-top: 32px
+					line-height: 30px
+					letter-spacing: -0.04em
+					margin-bottom: 2px
+				ul
+					list-style-image: url('../img/check-black.png')
+					margin-bottom: 0
+					padding-left: 60px
+					li
+						font-size: 20px
+						font-family: 'Roboto', sans-serif
+						font-weight: 300
+						max-width: 500px
+						line-height: 30px
+						padding-bottom: 10px
+						letter-spacing: -0.02em
+			.image-block
+				img
+					width: 543px
+					display: inline-block
+					position: relative
+					top: 18px
+					transition: 0.3s ease-in-out
+				&:before
+					content: ''
+					position: absolute
+					top: 18px
+					width: 543px
+					height: 429px
+					background: linear-gradient(to right, #b7c24a, rgba(255, 255, 255, 0.01))
+					z-index: 1
+					opacity: 0
+					transition: 0.3s ease-in-out
+				&:hover
+					img
+						filter: grayscale(100%)
+						-webkit-filter: grayscale(100%)
+						-moz-filter: grayscale(100%)
+						-ms-filter: grayscale(100%)
+						-o-filter: grayscale(100%)
+						filter: url(desaturate.svg#greyscale)
+						filter: gray
+						-webkit-filter: grayscale(1)
+					&:before
+						opacity: 1
+		.bottom
+			margin-top: -4px
+			margin-left: -10px
+			.text-box
+				max-width: 531px
+				display: inline-block
+				ul
+					list-style-image: url('../img/check-black.png')
+					margin-top: 47px
+					margin-left: 13px
+					li
+						font-size: 20px
+						line-height: 35px
+						font-family: 'Roboto', sans-serif
+						font-weight: 300
+						max-width: 467px
+						letter-spacing: -0.02em
+			.image-block
+				position: relative
+				float: left
+				img
+					display: inline-block
+					float: left
+					margin-left: 12px
+					margin-top: 16px
+				&:before
+					content: ''
+					position: absolute
+					top: 17px
+					left: 12px
+					width: 543px
+					height: 440px
+					background: linear-gradient(to right, #b7c24a, rgba(255, 255, 255, 0.01))
+					z-index: 1
+					opacity: 0
+					transition: 0.3s ease-in-out
+				&:hover
+					img
+						filter: grayscale(100%)
+						-webkit-filter: grayscale(100%)
+						-moz-filter: grayscale(100%)
+						-ms-filter: grayscale(100%)
+						-o-filter: grayscale(100%)
+						filter: url(desaturate.svg#greyscale)
+						filter: gray
+						-webkit-filter: grayscale(1)
+					&:before
+						opacity: 1
+
+.section-2
+	max-width: 1920px
+	margin: auto
+	margin-top: 249px
+	position: relative
+	clear: both
+	border-top: 1px solid #d9d9d9
+	.content-container
+		max-width: 1469px
+		width: 100%
+		float: right
+		position: relative
+		&::before
+			content: url('../img/section-2(bg-text).png')
+			position: absolute
+			top: 386px
+			left: -280px
+			opacity: 0.15
+		h2
+			font-size: 55px
+			font-family: 'Roboto', sans-serif
+			font-weight: 300
+			color: #6c6e70
+			text-transform: uppercase
+			max-width: 471px
+			line-height: 60px
+			position: relative
+			top: -155px
+			left: -4px
+		.box-images
+			width: 99%
+			margin-top: -160px
+			.cont
+				width: 100%
+				height: 99.2%
+				position: absolute
+				color: white
+				opacity: 0
+				z-index: 2
+				background: rgba(0, 0, 0, 0.67)
+				transition: 0.3s ease-in-out
+				p
+					max-width: 190px
+					font-size: 1.12em
+					line-height: 1.8em
+					color: white
+					font-family: 'Roboto', sans-serif
+					font-weight: 300
+					margin: auto
+					padding: 3.05em
+					transition: 0.3s ease-in-out
+					&:first-child
+						color: #b7c24a
+						padding: 1.61em !important
+				a
+					line-height: 10px
+					width: 6.3em
+					height: 0.6em
+					margin: auto
+					display: block
+					margin-top: 4%
+					margin-left: 18%
+					margin-bottom: 18%
+					background: #b7c24a
+					color: white
+					text-transform: uppercase
+					font-family: 'Roboto', sans-serif
+					font-size: 1.12em
+					padding: 1.375em 2.3em
+					text-decoration: none
+				&:hover
+					opacity: 1
+			.box
+				display: inline-block
+				width: 20%
+				margin: -3px
+				position: relative
+				transition: 0.5s ease-in-out
+				img
+					width: 100%
+
+.section-pass-0
+	max-width: 1920px
+	margin: auto
+	border-top: 1px solid #d9d9d9
+	border-bottom: 1px solid #d9d9d9
+	height: 181px
+	clear: both
+
+.section-pass
+	max-width: 1920px
+	margin: auto
+	border-top: 1px solid #d9d9d9
+	border-bottom: 1px solid #d9d9d9
+	clear: both
+	.content
+		max-width: 1469px
+		width: 100%
+		margin: auto
+		margin-right: 0
+		h2
+			font-size: 55px
+			font-family: 'Roboto', sans-serif
+			font-weight: 300
+			color: #6c6e70
+			text-transform: uppercase
+			max-width: 471px
+			line-height: 60px
+			margin: 0
+			margin-top: -7px
+			margin-left: -4px
+
+.section-pass-2
+	max-width: 1920px
+	margin: auto
+	border-top: 1px solid #d9d9d9
+	border-bottom: 1px solid #d9d9d9
+	clear: both
+	.content
+		max-width: 1469px
+		width: 100%
+		margin: auto
+		margin-right: 0
+		p
+			font-size: 20px
+			font-family: 'Roboto', sans-serif
+			font-weight: 300
+			max-width: 471px
+			line-height: 60px
+			margin: 0
+			letter-spacing: -0.04em
+			margin-left: -4px
+
+.section-3
+	max-width: 1920px
+	margin: auto
+	border-bottom: 1px solid #d9d9d9
+	.content-box
+		max-width: 1088px
+		margin: auto
+		position: relative
+		&::before
+			content: url('../img/section-3(bg-image).png')
+			position: absolute
+			top: -252px
+			left: 322px
+			z-index: -1
+		.box
+			display: inline-block
+			width: 32.2%
+			margin-left: 1.22%
+			background: #f0f0f0
+			img
+				width: 100%
+			p
+				max-width: 221px
+				font-size: 20px
+				font-family: 'Roboto', sans-serif
+				font-weight: 400
+				line-height: 30px
+				padding: 14px 27px
+			ul
+				list-style-image: url('../img/check-black.png')
+				margin-top: -11px
+				padding-left: 54px
+				li
+					font-size: 20px
+					font-family: 'Roboto', sans-serif
+					font-weight: 300
+					letter-spacing: -0.02em
+					line-height: 30px
+					padding-bottom: 31px
+			a
+				display: block
+				width: 200px
+				height: 60px
+				color: white
+				text-transform: uppercase
+				text-decoration: none
+				font-sixe: 20px
+				font-family: 'Roboto', sans-serif
+				font-weight: 400
+				line-height: 60px
+				text-align: center
+				margin: auto
+				background: #b7c24a
+				margin-top: -9px
+				margin-left: 69px
+				margin-bottom: 40px
+			&:first-child
+				margin-left: 0
+
+@media screen and (max-width: 1485px)
+	.section-3 .content-box::before
+		left: 13% !important
+	.section-2 .content-container h2, .section-pass .content h2, .section-pass-2 .content p
+		margin-left: 20px
+
+.now-work
+	padding-top: 188px
+	margin-bottom: -12px
+	.now-work-p2
+		width: 250px
+
+.run-soon
+	border-top: none
+	padding-bottom: 14px
+
+.section-4
+	padding-bottom: 150px
+	position: relative
+	&::after
+		content: url("../img/section-4(bg-text).png")
+		position: absolute
+		top: 30px
+		right: 0
+		opacity: 0.15
+	p
+		margin-top: 13px
+	.content-box::before
+		content: '' !important
+
+@import "modules/footer"
+
+@media screen and (max-width: 1490px)
+	.container .content-header .nav
+		.contacts
+			width: 24.5%
+		.logo
+			width: 31.5%
+		.search
+			width: 26.7%
+
+.filter
+	.filter-column
+		display: inline-block
+	label
+		display: inline-block
+		color: #ffffff
+		font-size: 17px
+		font-weight: 300
+		line-height: 9px
+	.filter_news_custom_select
+		position: relative
+		display: inline-block
+		color: #ffffff
+		font-size: 17px
+		font-weight: 300
+		line-height: 19.83px
+		margin-left: 12px
+		margin-right: 21px
+		.filter_news_custom_option
+			position: absolute
+			display: none
+			min-width: 180px
+			padding: 15px
+			margin: 0
+			list-style-type: none
+			background: rgba(254,254,254,1)
+			border-radius: 0 0 14px 14px
+			li
+				padding: 5px
+	// Стилизация select
+	.select-hidden
+		display: none
+		visibility: hidden
+	.select
+		position: relative
+		display: inline-block
+		width: 160px
+		height: 16px
+		margin-left: 5px
+		color: #fff
+		font-weight: 300
+		cursor: pointer
+	.select-styled
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		transition: all 0.2s ease-in
+		&::after
+			content: ""
+			position: absolute
+			top: 50%
+			right: 40px
+			width: 0
+			height: 0
+			border-left: 5px solid transparent
+			border-right: 5px solid transparent
+			border-top: 5px solid #ffffff
+	.select-options
+		box-sizing: border-box
+		position: absolute
+		top: 25px
+		right: 0
+		left: 0
+		z-index: 999
+		display: none
+		margin: 0
+		padding: 15px
+		color: #ffffff
+		text-align: center
+		font-weight: 600
+		list-style: none
+		background-color: rgba(#000000, .4)
+		box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.5)
+		li
+			margin: 0
+			padding: 5px
+			transition: all 0.15s ease-in
+			line-height: 2
+			&:hover
+				opacity: .6
+			&[rel="hide"]
+				display: none
