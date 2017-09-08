@@ -9,380 +9,703 @@
     <!-- Загрузка стилей-->
     <link href="static/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet">
-    <!--link(href='static/css/responsive.css', rel='stylesheet')-->
     <link href="static/css/flexslider.css" rel="stylesheet">
   </head>
   <title>Главная страница
   </title>
   <body>
-    <!--include ../modules/header-->
-    <!--canvas#myCanvas3(width='1920', height='850')-->
     <header class="main-header">
+      <canvas class="line-canvas" id="LinesCanvas" width="1920" height="850"></canvas>
+      <!--.svg-line-->
+      <!--	svg(version='1.1',-->
+      <!--	id='Шар_1',-->
+      <!--	xmlns='http://www.w3.org/2000/svg',-->
+      <!--	xmlns:xlink='http://www.w3.org/1999/xlink',-->
+      <!--	x='0px',-->
+      <!--	y='0px',-->
+      <!--	width='1250px',-->
+      <!--	height='1300px',-->
+      <!--	viewbox='0 0 132 1225.666',-->
+      <!--	enable-background='new 0 0 132 1085.666',-->
+      <!--	xml:space='preserve')-->
+      <!--		path(fill='none',-->
+      <!--		stroke='#ffffff',-->
+      <!--		stroke-linecap='round',-->
+      <!--		stroke-linejoin='round',-->
+      <!--		stroke-miterlimit='10',-->
+      <!--		d='M120.895,0 L2.517,68.182v1157.484',-->
+      <!--		style='stroke-dasharray: 1294.09px; stroke-dashoffset: 857px;')-->
+      <!--.svg-line-->
+      <!--	svg(height='210' width='500')-->
+      <!--		line(x1='1400' y1='100' x2='200' y2='200' style='stroke:rgb(255,255,255);stroke-width:1')-->
+      <!--		| Sorry, your browser does not support inline SVG.-->
+      <svg class="svg-line" version="1.1" id="Line1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1920 850" style="enable-background:new 0 0 1920 850;" xml:space="preserve">
+        <g>
+          <line class="line" x1="570" y1="163" x2="1267" y2="163"></line>
+          <rect class="rect" x="1267" y="103" width="291" height="295"></rect>
+        </g>
+      </svg>
+      <!--svg.svg-line(-->
+      <!--		version='1.1',-->
+      <!--		id='Line2',-->
+      <!--		xmlns='http://www.w3.org/2000/svg',-->
+      <!--		xmlns:xlink='http://www.w3.org/1999/xlink',-->
+      <!--		x='0px', y='0px',-->
+      <!--		viewbox='0 0 1920 850',-->
+      <!--		style='enable-background:new 0 0 1920 850;',-->
+      <!--		xml:space='preserve')-->
+      <!--		g-->
+      <!--			line.line(x1='460' y1='235' x2='1267' y2='235')-->
+      <!--			rect.rect(x='1267', y='103', width='291', height='295')-->
+      <!---->
+      <!--svg.svg-line(-->
+      <!--	version='1.1',-->
+      <!--	id='Line3',-->
+      <!--	xmlns='http://www.w3.org/2000/svg',-->
+      <!--	xmlns:xlink='http://www.w3.org/1999/xlink',-->
+      <!--	x='0px', y='0px',-->
+      <!--	viewbox='0 0 1920 850',-->
+      <!--	style='enable-background:new 0 0 1920 850;',-->
+      <!--	xml:space='preserve')-->
+      <!--	g-->
+      <!--		line.line(x1='460' y1='315' x2='1267' y2='315')-->
+      <!--		rect.rect(x='1267', y='103', width='291', height='295')-->
+      <!---->
+      <!--svg.svg-line(-->
+      <!--	version='1.1',-->
+      <!--	id='Line4',-->
+      <!--	xmlns='http://www.w3.org/2000/svg',-->
+      <!--	xmlns:xlink='http://www.w3.org/1999/xlink',-->
+      <!--	x='0px', y='0px',-->
+      <!--	viewbox='0 0 1920 850',-->
+      <!--	style='enable-background:new 0 0 1920 850;',-->
+      <!--	xml:space='preserve')-->
+      <!--	g-->
+      <!--		line.line(x1='645' y1='395' x2='1267' y2='395')-->
+      <!--		rect.rect(x='1267', y='103', width='291', height='295')-->
+      <!---->
+      <!--svg.svg-line(-->
+      <!--	version='1.1',-->
+      <!--	id='Line5',-->
+      <!--	xmlns='http://www.w3.org/2000/svg',-->
+      <!--	xmlns:xlink='http://www.w3.org/1999/xlink',-->
+      <!--	x='0px', y='0px',-->
+      <!--	viewbox='0 0 1920 850',-->
+      <!--	style='enable-background:new 0 0 1920 850;',-->
+      <!--	xml:space='preserve')-->
+      <!--	g-->
+      <!--		line.line(x1='585' y1='475' x2='1267' y2='475')-->
+      <!--		rect.rect(x='1267', y='103', width='291', height='295')-->
+      <!---->
+      <!--svg.svg-line(-->
+      <!--	version='1.1',-->
+      <!--	id='Line6',-->
+      <!--	xmlns='http://www.w3.org/2000/svg',-->
+      <!--	xmlns:xlink='http://www.w3.org/1999/xlink',-->
+      <!--	x='0px', y='0px',-->
+      <!--	viewbox='0 0 1920 850',-->
+      <!--	style='enable-background:new 0 0 1920 850;',-->
+      <!--	xml:space='preserve')-->
+      <!--	g-->
+      <!--		line.line(x1='530' y1='560' x2='1267' y2='560')-->
+      <!--		rect.rect(x='1267', y='103', width='291', height='295')-->
+      <!---->
+      <!--svg.svg-line(-->
+      <!--	version='1.1',-->
+      <!--	id='Line7',-->
+      <!--	xmlns='http://www.w3.org/2000/svg',-->
+      <!--	xmlns:xlink='http://www.w3.org/1999/xlink',-->
+      <!--	x='0px', y='0px',-->
+      <!--	viewbox='0 0 1920 850',-->
+      <!--	style='enable-background:new 0 0 1920 850;',-->
+      <!--	xml:space='preserve')-->
+      <!--	g-->
+      <!--		line.line(x1='600' y1='655' x2='1267' y2='655')-->
+      <!--		rect.rect(x='1267', y='103', width='291', height='295')-->
+      <!---->
+      <!--svg.svg-line.svg-line-8(-->
+      <!--	version='1.1',-->
+      <!--	id='Line8',-->
+      <!--	xmlns='http://www.w3.org/2000/svg',-->
+      <!--	xmlns:xlink='http://www.w3.org/1999/xlink',-->
+      <!--	x='0px', y='0px',-->
+      <!--	viewbox='0 0 1920 850',-->
+      <!--	style='enable-background:new 0 0 1920 850;',-->
+      <!--	xml:space='preserve')-->
+      <!--	g-->
+      <!--		line.line(x1='580' y1='735' x2='1267' y2='735')-->
+      <!--		rect.rect(x='1267', y='103', width='291', height='295')-->
       <div class="container">
-        <div class="top-line">
+        <div class="top-line" id="topLine">
           <div class="row">
-            <div class="col-4">
-              <div class="top-line__logo"><a href="#"><img src="static/img/logo.png"><span class="top-line__logo__text">Эксперт в сжигании биомассы</span></a></div>
-            </div>
-            <div class="col-5">
-              <div class="top-line__center">
-                <div class="top-line__center__contacts">
-                  <div class="top-line__center__filter filter">
-                    <label>Киев:</label>
-                    <select class="filter-news-select" name="region">
-                      <option value="hide">095 686 89 67</option>
-                      <option value="number-1">095 686 89 68</option>
-                      <option value="number-2">095 686 89 69</option>
-                      <option value="number-3">095 686 89 70</option>
-                    </select>
-                  </div>
-                  <div class="top-line__center__search">
-                    <form action="#" method="post">
-                      <input type="text" placeholder="Поиск по сайту">
-                      <button type="submit"></button>
-                    </form>
-                  </div>
+            <div class="top-line__logo"><a href="#"><img class="top-line__logo--thumb" src="static/img/top-logo.png" alt="Big logo"><img class="top-line__logo--thumbnail" src="static/img/bottom-logo.png" alt="Small logo"><span class="top-line__logo__text">Эксперт в сжигании биомассы</span></a></div>
+            <div class="top-line__center">
+              <div class="top-line__center__contacts">
+                <div class="top-line__center__filter filter">
+                  <label>Киев:</label>
+                  <select class="filter-news-select" name="region">
+                    <option value="hide">095 686 89 67</option>
+                    <option value="number-1">095 686 89 68</option>
+                    <option value="number-2">095 686 89 69</option>
+                    <option value="number-3">095 686 89 70</option>
+                  </select>
                 </div>
-                <nav class="top-line__center__nav">
+                <div class="top-line__center__search">
+                  <form action="#" method="post">
+                    <input type="text" placeholder="Поиск по сайту">
+                    <button type="submit"></button>
+                  </form>
+                </div>
+              </div>
+              <nav class="top-line__center__nav">
+                <ul>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Объекты</a></li>
+                  <li><a href="#">Информация</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="top-line__call"><a href="#">Звонок с сайта</a></div>
+            <div class="top-line__burger">
+              <div class="burger-bav-link" id="burgerNavLink">
+                <!-- Всплывающее меню-->
+                <nav class="burger-nav" id="burgerNav">
                   <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Объекты</a></li>
-                    <li><a href="#">Информация</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Энергетический аудит, менеджмент, консалтинг</a></li>
+                    <li><a href="#">Проектный менеджмент</a></li>
+                    <li><a href="#">Инжиниринг</a></li>
+                    <li><a href="#">Промышленные твердотопливные котли</a></li>
+                    <li><a href="#">Бытовые пеплетные котлы</a></li>
+                    <li><a href="#">Паровые твердотопливные котлы и котлоагрегаты</a></li>
+                    <li><a href="#">Воздушные теплогенераторы на твердом топливе</a></li>
+                    <li><a href="#">Котельно-вспомогогательное оборудование</a></li>
                   </ul>
                 </nav>
               </div>
             </div>
-            <div class="col-3 top-line__call"><a href="#">Звонок с сайта</a></div>
-            <div class="col-1"></div>
+            <div class="top-line__right">
+              <div class="top-line__lang" id="topLangLink"><span>RU</span>
+                <ul class="top-line__lang__list" id="topLangOptions">
+                  <li data-value="">RU</li>
+                  <li data-value="1">EN</li>
+                  <li data-value="2">UA</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="flexslider" id="slider">
+            <ul class="slides">
+              <li class="slide-li">
+                <ul class="info-enclosed">
+                  <li class="text-li">
+                    <ul class="enclosed-ul">
+                      <li>
+                        <p>Технико-экономические расчеты</p>
+                      </li>
+                      <li>
+                        <p>Проектирование</p>
+                      </li>
+                      <li>
+                        <p>Авторский надзор</p>
+                      </li>
+                      <li>
+                        <p>Технический надзор</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide-li slide-1">
+                <ul class="info-enclosed">
+                  <li class="text-li">
+                    <ul class="enclosed-ul">
+                      <li>
+                        <p>Технико-экономические расчеты</p>
+                      </li>
+                      <li>
+                        <p>Проектирование</p>
+                      </li>
+                      <li>
+                        <p>Авторский надзор</p>
+                      </li>
+                      <li>
+                        <p>Технический надзор</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide-li slide-2">
+                <ul class="info-enclosed">
+                  <li class="text-li">
+                    <ul class="enclosed-ul">
+                      <li>
+                        <p>Технико-экономические расчеты</p>
+                      </li>
+                      <li>
+                        <p>Проектирование</p>
+                      </li>
+                      <li>
+                        <p>Авторский надзор</p>
+                      </li>
+                      <li>
+                        <p>Технический надзор</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide-li slide-3">
+                <ul class="info-enclosed">
+                  <li class="text-li">
+                    <ul class="enclosed-ul">
+                      <li>
+                        <p>Технико-экономические расчеты</p>
+                      </li>
+                      <li>
+                        <p>Проектирование</p>
+                      </li>
+                      <li>
+                        <p>Авторский надзор</p>
+                      </li>
+                      <li>
+                        <p>Технический надзор</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide-li slide-4">
+                <ul class="info-enclosed">
+                  <li class="text-li">
+                    <ul class="enclosed-ul">
+                      <li>
+                        <p>Технико-экономические расчеты</p>
+                      </li>
+                      <li>
+                        <p>Проектирование</p>
+                      </li>
+                      <li>
+                        <p>Авторский надзор</p>
+                      </li>
+                      <li>
+                        <p>Технический надзор</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide-li slide-4">
+                <ul class="info-enclosed">
+                  <li class="text-li">
+                    <ul class="enclosed-ul">
+                      <li>
+                        <p>Технико-экономические расчеты</p>
+                      </li>
+                      <li>
+                        <p>Проектирование</p>
+                      </li>
+                      <li>
+                        <p>Авторский надзор</p>
+                      </li>
+                      <li>
+                        <p>Технический надзор</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide-li slide-5">
+                <ul class="info-enclosed">
+                  <li class="text-li">
+                    <ul class="enclosed-ul">
+                      <li>
+                        <p>Технико-экономические расчеты</p>
+                      </li>
+                      <li>
+                        <p>Проектирование</p>
+                      </li>
+                      <li>
+                        <p>Авторский надзор</p>
+                      </li>
+                      <li>
+                        <p>Технический надзор</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide-li slide-6">
+                <ul class="info-enclosed">
+                  <li class="text-li">
+                    <ul class="enclosed-ul">
+                      <li>
+                        <p>Технико-экономические расчеты</p>
+                      </li>
+                      <li>
+                        <p>Проектирование</p>
+                      </li>
+                      <li>
+                        <p>Авторский надзор</p>
+                      </li>
+                      <li>
+                        <p>Технический надзор</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="flexslider-controls">
+            <ol class="flex-control-nav">
+              <li class="slide-text-1">
+                <p>Энергетический аудит,<br>менеджмент, консалтинг</p>
+              </li>
+              <li class="slide-text-2">
+                <p>Проектный<br>менеджмент</p>
+              </li>
+              <li class="slide-text-3">
+                <p>Инжиниринг</p>
+              </li>
+              <li class="slide-text-4">
+                <p>Промышленные твердотопливные<br>котлы на биомассе</p>
+              </li>
+              <li class="slide-text-5">
+                <p>Бытовые пеллетные котлы<br>и камины</p>
+              </li>
+              <li class="slide-text-6">
+                <p>Паровые котлы<br>на твердом топливе</p>
+              </li>
+              <li class="slide-text-7">
+                <p>Воздушные теплогенераторы<br>на твердом топливе</p>
+              </li>
+              <li class="slide-text-8">
+                <p>Котельно-вспомагательное<br>оборудование</p>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
     </header>
-    <!--		ul.nav-->
-    <!--			.row-->
-    <!--				.col-5-->
-    <!--					li.logo-->
-    <!--						a(href='#')-->
-    <!--							img(src='static/img/logo.png')-->
-    <!--							span.logo-text Эксперт в сжигании биомассы-->
-    <!--				.col-3-->
-    <!--					li.contacts-->
-    <!--						p Киев: 095 686 89 67-->
-    <!--						p Харьков:  095 686 89 67-->
-    <!--				.col-3-->
-    <!--					li.search-->
-    <!--						input(type='text', placeholder='Поиск по сайту')-->
-    <!--				.col-3-->
-    <!--					li.change-language-->
-    <!--						select-->
-    <!--							option RU-->
-    <!--							option EN-->
-    <!--		section.slider-->
-    <!--			#slider.flexslider-->
-    <!--				ul.slides-->
-    <!--					li.slide-li-->
-    <!--						ul.info-enclosed-->
-    <!--							li.text-li-->
-    <!--								ul.enclosed-ul-->
-    <!--									li-->
-    <!--										p Технико-экономические расчеты-->
-    <!--									li-->
-    <!--										p Проектирование-->
-    <!--									li-->
-    <!--										p Авторский надзор-->
-    <!--									li-->
-    <!--										p Технический надзор-->
-    <!--							li.image-li-->
-    <!--								.image-slider.first-slide-->
-    <!--						p.sub-title Виды услуг-->
-    <!--						h1 Заголовок Главная-->
-    <!--						a.read-more-button Подробнее-->
-    <!--					li.slide-li.slide-1-->
-    <!--						ul.info-enclosed-->
-    <!--							li.text-li-->
-    <!--								ul.enclosed-ul-->
-    <!--									li-->
-    <!--										p Технико-экономические расчеты-->
-    <!--									li-->
-    <!--										p Проектирование-->
-    <!--									li-->
-    <!--										p Авторский надзор-->
-    <!--									li-->
-    <!--										p Технический надзор-->
-    <!--							li.image-li-->
-    <!--								.image-slider.first-slide-->
-    <!--						p.sub-title Текст(О компании)г-->
-    <!--						h1 Заголовок О компании-->
-    <!--						a.read-more-button Подробнее-->
-    <!--					li.slide-li.slide-2-->
-    <!--						ul.info-enclosed-->
-    <!--							li.text-li-->
-    <!--								ul.enclosed-ul-->
-    <!--									li-->
-    <!--										p Технико-экономические расчеты-->
-    <!--									li-->
-    <!--										p Проектирование-->
-    <!--									li-->
-    <!--										p Авторский надзор-->
-    <!--									li-->
-    <!--										p Технический надзор-->
-    <!--							li.image-li-->
-    <!--								.image-slider.first-slide-->
-    <!--						p.sub-title Текст (Обьекты)г-->
-    <!--						h1 Заголовок Обьекты-->
-    <!--						a.read-more-button Подробнее-->
-    <!--					li.slide-li.slide-3-->
-    <!--						ul.info-enclosed-->
-    <!--							li.text-li-->
-    <!--								ul.enclosed-ul-->
-    <!--									li-->
-    <!--										p расчеты-->
-    <!--									li-->
-    <!--										p Проектирование-->
-    <!--									li-->
-    <!--										p Авторский надзор-->
-    <!--									li-->
-    <!--										p Технический надзор-->
-    <!--							li.image-li-->
-    <!--								.image-slider.first-slide-->
-    <!--						p.sub-title Текст (Информация)-->
-    <!--						h1 Заголовок Информация-->
-    <!--						a.read-more-button Подробнее-->
-    <!--					li.slide-li.slide-4-->
-    <!--						ul.info-enclosed-->
-    <!--							li.text-li-->
-    <!--								ul.enclosed-ul-->
-    <!--									li-->
-    <!--										p Технико-экономические расчеты-->
-    <!--									li-->
-    <!--										p Проектирование-->
-    <!--									li-->
-    <!--										p Авторский надзор-->
-    <!--									li-->
-    <!--										p Технический надзор-->
-    <!--							li.image-li-->
-    <!--								.image-slider.first-slide-->
-    <!--						p.sub-title Текст (Контакты)-->
-    <!--						h1 Заголовок Контакты-->
-    <!--						a.read-more-button Подробнее-->
-    <!--			.flexslider-controls-->
-    <!--				ol.flex-control-nav-->
-    <!--					li-->
-    <!--						p-->
-    <!--							| 01-->
-    <!--							span    Главная-->
-    <!--					li-->
-    <!--						p-->
-    <!--							| 02-->
-    <!--							span    О компании-->
-    <!--					li-->
-    <!--						p-->
-    <!--							| 03-->
-    <!--							span    Обьекты-->
-    <!--					li-->
-    <!--						p-->
-    <!--							| 04-->
-    <!--							span    Информация-->
-    <!--					li-->
-    <!--						p-->
-    <!--							| 05-->
-    <!--							span    Контакты-->
-    <!--section.section-1-->
-    <!--	.container-content-->
-    <!--		.top-->
-    <!--			.text-box-->
-    <!--				h2 Добро пожаловать-->
-    <!--				p-->
-    <!--					| Инженерный центр «ЭкоЭнергоПроект»-->
-    <!--					| осуществляет деятельность в сфере инновационных инженерных решений в-->
-    <!--					| области сжигания твердого топлива для бытовых и производственных нужд:-->
-    <!--				ul-->
-    <!--					li-->
-    <!--						| энергоаудит, составление технико-экономических расчетов и обоснований на основе анализа-->
-    <!--					li специфики региона и по­тенциалов местных видов топлива;-->
-    <!--			.image-block-->
-    <!--				img(src='static/img/section-1.png')-->
-    <!--		.bottom-->
-    <!--			.text-box-->
-    <!--				ul-->
-    <!--					li проектирование и согласование, оформление топочных и ко­тельных;-->
-    <!--					li-->
-    <!--						| проектирование и строительство складов твердого топлива, механизмов топливоподачи;-->
-    <!--					li поставка оборудования, монтаж, пусконаладочные работы и ввод в эксплуатацию;-->
-    <!--					li строительство топочных и котельных;-->
-    <!--					li комплексные системы автоматического управления (АСУ) для котельных;-->
-    <!--					li гарантийное сервисное обслуживание эксплуатируемых объектов.-->
-    <!--			.image-block-->
-    <!--				img(src='static/img/section-1(2).png')-->
-    <!--section.section-2-->
-    <!--	.content-container-->
-    <!--		h2 Основная специализация-->
-    <!--		.box-images-->
-    <!--			.box-->
-    <!--				.cont-->
-    <!--					p-->
-    <!--						| Твердотопливные-->
-    <!--						| теплогенераторы-->
-    <!--					p-->
-    <!--						| Теплогенераторы горячего воздуха на биомассе-->
-    <!--						| (пеллетах, дровах, угле, соломе, торфе и пр.)-->
-    <!--						| для организации отопления, складских, производственных-->
-    <!--						| , и прочих помещений.-->
-    <!--					a(href='#') Подробнее-->
-    <!--				img(src='static/img/section-2(1).png')-->
-    <!--			.box-->
-    <!--				.cont-->
-    <!--					p-->
-    <!--						| Твердотопливные-->
-    <!--						| теплогенераторы-->
-    <!--					p-->
-    <!--						| Теплогенераторы горячего воздуха на биомассе-->
-    <!--						| (пеллетах, дровах, угле, соломе, торфе и пр.)-->
-    <!--						| для организации отопления, складских, производственных-->
-    <!--						| , и прочих помещений.-->
-    <!--					a(href='#') Подробнее-->
-    <!--				img(src='static/img/section-2)2).png')-->
-    <!--			.box-->
-    <!--				.cont-->
-    <!--					p-->
-    <!--						| Твердотопливные-->
-    <!--						| теплогенераторы-->
-    <!--					p-->
-    <!--						| Теплогенераторы горячего воздуха на биомассе-->
-    <!--						| (пеллетах, дровах, угле, соломе, торфе и пр.)-->
-    <!--						| для организации отопления, складских, производственных-->
-    <!--						| , и прочих помещений.-->
-    <!--					a(href='#') Подробнее-->
-    <!--				img(src='static/img/section-2(1).png')-->
-    <!--			.box-->
-    <!--				.cont-->
-    <!--					p-->
-    <!--						| Твердотопливные-->
-    <!--						| теплогенераторы-->
-    <!--					p-->
-    <!--						| Теплогенераторы горячего воздуха на биомассе-->
-    <!--						| (пеллетах, дровах, угле, соломе, торфе и пр.)-->
-    <!--						| для организации отопления, складских, производственных-->
-    <!--						| , и прочих помещений.-->
-    <!--					a(href='#') Подробнее-->
-    <!--				img(src='static/img/section-2)2).png')-->
-    <!--			.box-->
-    <!--				.cont-->
-    <!--					p-->
-    <!--						| Твердотопливные-->
-    <!--						| теплогенераторы-->
-    <!--					p-->
-    <!--						| Теплогенераторы горячего воздуха на биомассе-->
-    <!--						| (пеллетах, дровах, угле, соломе, торфе и пр.)-->
-    <!--						| для организации отопления, складских, производственных-->
-    <!--						| , и прочих помещений.-->
-    <!--					a(href='#') Подробнее-->
-    <!--				img(src='static/img/section-2(1).png')-->
-    <!--section.section-pass-0-->
-    <!--section.section-pass-->
-    <!--	.content-->
-    <!--		h2 Недавно Реализованные проекты-->
-    <!--section.section-pass-2-->
-    <!--	.content-->
-    <!--		p Проекты за последний год-->
-    <!--section.section-3-->
-    <!--	.content-box-->
-    <!--		.box-->
-    <!--			img(src='static/img/section-3(1).png')-->
-    <!--			p-->
-    <!--				| Паровая котельная.-->
-    <!--				| Завод по производству-->
-    <!--				| биоэтанола-->
-    <!--			ul-->
-    <!--				li-->
-    <!--					| Разработка концепции эскиза-->
-    <!--					| Разработка рабочего проекта.-->
-    <!--				li Авторский надзор. Согласование проекта-->
-    <!--			a(href='#') Подробнее-->
-    <!--		.box-->
-    <!--			img(src='static/img/section-3(2).png')-->
-    <!--			p-->
-    <!--				| Паровая котельная.-->
-    <!--				| Завод по производству-->
-    <!--				| биоэтанола-->
-    <!--			ul-->
-    <!--				li-->
-    <!--					| Разработка концепции эскиза-->
-    <!--					| Разработка рабочего проекта.-->
-    <!--				li Авторский надзор. Согласование проекта-->
-    <!--			a(href='#') Подробнее-->
-    <!--		.box-->
-    <!--			img(src='static/img/section-3(1).png')-->
-    <!--			p-->
-    <!--				| Паровая котельная.-->
-    <!--				| Завод по производству-->
-    <!--				| биоэтанола-->
-    <!--			ul-->
-    <!--				li-->
-    <!--					| Разработка концепции эскиза-->
-    <!--					| Разработка рабочего проекта.-->
-    <!--				li Авторский надзор. Согласование проекта-->
-    <!--			a(href='#') Подробнее-->
-    <!--section.section-pass.now-work-->
-    <!--	.content-->
-    <!--		h2.now-work-p2-->
-    <!--			| СЕЙЧАС-->
-    <!--			| В РАБОТЕ-->
-    <!--section.section-pass-2.run-soon-->
-    <!--	.content-->
-    <!--		p-->
-    <!--			| Запустим в ближайшем будущем-->
-    <!--section.section-3.section-4-->
-    <!--	.content-box-->
-    <!--		.box-->
-    <!--			img(src='static/img/section-4(1).png')-->
-    <!--			p-->
-    <!--				| Паровая котельная.-->
-    <!--				| Завод по производству-->
-    <!--				| биоэтанола-->
-    <!--			ul-->
-    <!--				li-->
-    <!--					| Разработка концепции эскиза-->
-    <!--					| Разработка рабочего проекта.-->
-    <!--				li Авторский надзор. Согласование проекта-->
-    <!--			a(href='#') Подробнее-->
-    <!--		.box-->
-    <!--			img(src='static/img/section-4(2).png')-->
-    <!--			p-->
-    <!--				| Паровая котельная.-->
-    <!--				| Завод по производству-->
-    <!--				| биоэтанола-->
-    <!--			ul-->
-    <!--				li-->
-    <!--					| Разработка концепции эскиза-->
-    <!--					| Разработка рабочего проекта.-->
-    <!--				li Авторский надзор. Согласование проекта-->
-    <!--			a(href='#') Подробнее-->
-    <!--		.box-->
-    <!--			img(src='static/img/section-4(3).png')-->
-    <!--			p-->
-    <!--				| Паровая котельная.-->
-    <!--				| Завод по производству-->
-    <!--				| биоэтанола-->
-    <!--			ul-->
-    <!--				li-->
-    <!--					| Разработка концепции эскиза-->
-    <!--					| Разработка рабочего проекта.-->
-    <!--				li Авторский надзор. Согласование проекта-->
-    <!--			a(href='#') Подробнее-->
+    <section class="welcome">
+      <div class="container">
+        <div class="row">
+          <div class="block-left">
+            <div class="block-left__wrap">
+              <div class="dots-bg-wrap"></div><img src="static/img/section-welcome/img.png" alt="Section img">
+            </div>
+          </div>
+          <div class="block-right">
+            <h1>Добро<br>Пожаловать</h1>
+            <p>Инженерный центр «ЭкоЭнергоПроект»<br>осуществляет деятельность в сфере инновационных<br>инженерных решений в области сжигания твердого<br>топлива для бытовых и производственных нужд:</p>
+            <ul>
+              <li><img src="static/img/section-welcome/list-dot.png" width="9" height="9" alt="Bullet img">энергоаудит, составление технико-экономических расчетов и обоснований на основе анализа</li>
+              <li><img src="static/img/section-welcome/list-dot.png" width="9" height="9" alt="Bullet img">специфики региона и по­тенциалов местных видов топлива;</li>
+              <li><img src="static/img/section-welcome/list-dot.png" width="9" height="9" alt="Bullet img">проектирование и согласование, оформление топочных и ко­тельных;</li>
+              <li><img src="static/img/section-welcome/list-dot.png" width="9" height="9" alt="Bullet img">проектирование и строительство складов твердого топлива, механизмов топливоподачи;</li>
+              <li><img src="static/img/section-welcome/list-dot.png" width="9" height="9" alt="Bullet img">поставка оборудования, монтаж, пусконаладочные работы и ввод в эксплуатацию;</li>
+              <li><img src="static/img/section-welcome/list-dot.png" width="9" height="9" alt="Bullet img">строительство топочных и котельных;</li>
+              <li><img src="static/img/section-welcome/list-dot.png" width="9" height="9" alt="Bullet img">комплексные системы автоматического управления (АСУ) для котельных;</li>
+              <li><img src="static/img/section-welcome/list-dot.png" width="9" height="9" alt="Bullet img">гарантийное сервисное обслуживание эксплуатируемых объектов.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-2">
+      <div class="border"></div>
+      <div class="container">
+        <h2>Основная специализация</h2>
+        <div class="box-images">
+          <div class="box">
+            <div class="cont">
+              <p class="cont-title">
+                Твердотопливные
+                теплогенераторы
+              </p>
+              <p>
+                Теплогенераторы горячего воздуха на биомассе
+                (пеллетах, дровах, угле, соломе, торфе и пр.)
+                для организации отопления, складских, производственных
+                , и прочих помещений.
+              </p><a href="#">Подробнее</a>
+            </div><img src="static/img/section-2(1).png">
+          </div>
+          <div class="box">
+            <div class="cont">
+              <p class="cont-title">
+                Твердотопливные
+                теплогенераторы
+              </p>
+              <p>
+                Теплогенераторы горячего воздуха на биомассе
+                (пеллетах, дровах, угле, соломе, торфе и пр.)
+                для организации отопления, складских, производственных
+                , и прочих помещений.
+              </p><a href="#">Подробнее</a>
+            </div><img src="static/img/section-2)2).png">
+          </div>
+          <div class="box">
+            <div class="cont">
+              <p class="cont-title">
+                Твердотопливные
+                теплогенераторы
+              </p>
+              <p>
+                Теплогенераторы горячего воздуха на биомассе
+                (пеллетах, дровах, угле, соломе, торфе и пр.)
+                для организации отопления, складских, производственных
+                , и прочих помещений.
+              </p><a href="#">Подробнее</a>
+            </div><img src="static/img/section-2(1).png">
+          </div>
+          <div class="box">
+            <div class="cont">
+              <p class="cont-title">
+                Твердотопливные
+                теплогенераторы
+              </p>
+              <p>
+                Теплогенераторы горячего воздуха на биомассе
+                (пеллетах, дровах, угле, соломе, торфе и пр.)
+                для организации отопления, складских, производственных
+                , и прочих помещений.
+              </p><a href="#">Подробнее</a>
+            </div><img src="static/img/section-2)2).png">
+          </div>
+          <div class="box">
+            <div class="cont">
+              <p class="cont-title">
+                Твердотопливные
+                теплогенераторы
+              </p>
+              <p>
+                Теплогенераторы горячего воздуха на биомассе
+                (пеллетах, дровах, угле, соломе, торфе и пр.)
+                для организации отопления, складских, производственных
+                , и прочих помещений.
+              </p><a href="#">Подробнее</a>
+            </div><img src="static/img/section-2(1).png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-pass">
+      <div class="content">
+        <h2>Недавно Реализованные проекты</h2>
+      </div>
+    </section>
+    <section class="section-pass-2">
+      <div class="content">
+        <p>Проекты за последний год</p>
+      </div>
+    </section>
+    <section class="section-3">
+      <div class="border"></div>
+      <div class="content-box">
+        <div class="box">
+          <div class="img-block"><img src="static/img/section-3(1).png"></div>
+          <p>
+            Паровая котельная.
+            Завод по производству
+            биоэтанола
+          </p>
+          <ul>
+            <li>
+              Разработка концепции эскиза
+              Разработка рабочего проекта.
+            </li>
+            <li>Авторский надзор. Согласование проекта</li>
+          </ul><a href="#">Подробнее</a>
+        </div>
+        <div class="box">
+          <div class="img-block"><img src="static/img/section-3(2).png"></div>
+          <p>
+            Паровая котельная.
+            Завод по производству
+            биоэтанола
+          </p>
+          <ul>
+            <li>
+              Разработка концепции эскиза
+              Разработка рабочего проекта.
+            </li>
+            <li>Авторский надзор. Согласование проекта</li>
+          </ul><a href="#">Подробнее</a>
+        </div>
+        <div class="box">
+          <div class="img-block"><img src="static/img/section-3(1).png"></div>
+          <p>
+            Паровая котельная.
+            Завод по производству
+            биоэтанола
+          </p>
+          <ul>
+            <li>
+              Разработка концепции эскиза
+              Разработка рабочего проекта.
+            </li>
+            <li>Авторский надзор. Согласование проекта</li>
+          </ul><a href="#">Подробнее</a>
+        </div>
+      </div>
+    </section>
+    <section class="section-pass-3">
+      <div class="content">
+        <h2>
+          СЕЙЧАС
+          В РАБОТЕ
+        </h2>
+      </div>
+    </section>
+    <section class="section-pass-4">
+      <div class="content">
+        <p>Запустим в ближайшем будущем</p>
+      </div>
+    </section>
+    <section class="section-4">
+      <div class="border"></div>
+      <div class="border-2"></div>
+      <div class="content-box">
+        <div class="box">
+          <div class="img-block"><img src="static/img/section-3(1).png"></div>
+          <p>
+            Паровая котельная.
+            Завод по производству
+            биоэтанола
+          </p>
+          <ul>
+            <li>
+              Разработка концепции эскиза
+              Разработка рабочего проекта.
+            </li>
+            <li>Авторский надзор. Согласование проекта</li>
+          </ul><a href="#">Подробнее</a>
+        </div>
+        <div class="box">
+          <div class="img-block"><img src="static/img/section-3(2).png"></div>
+          <p>
+            Паровая котельная.
+            Завод по производству
+            биоэтанола
+          </p>
+          <ul>
+            <li>
+              Разработка концепции эскиза
+              Разработка рабочего проекта.
+            </li>
+            <li>Авторский надзор. Согласование проекта</li>
+          </ul><a href="#">Подробнее</a>
+        </div>
+        <div class="box">
+          <div class="img-block"><img src="static/img/section-3(1).png"></div>
+          <p>
+            Паровая котельная.
+            Завод по производству
+            биоэтанола
+          </p>
+          <ul>
+            <li>
+              Разработка концепции эскиза
+              Разработка рабочего проекта.
+            </li>
+            <li>Авторский надзор. Согласование проекта</li>
+          </ul><a href="#">Подробнее</a>
+        </div>
+      </div>
+    </section>
+    <section class="section-5">
+      <div class="container-content">
+        <div class="block-articles">
+          <h2>Статьи</h2>
+          <div class="block-articles__items">
+            <div class="block-articles__items__box">
+              <div class="image-block"><a href="#"><img src="static/img/article-img-1.jpg" alt="Article image"></a></div>
+              <div class="content-block">
+                <div class="text-part">
+                  <h3>Что вы получаете в результате энергоаудита?</h3>
+                  <p>
+                    проектирование и согласование
+                    проектирование и согласование
+                  </p>
+                </div>
+                <div class="links-part"><a class="links-part__more" href="#">Подробнее</a>
+                  <div class="links-part__soc"><a class="links-part__soc__icon links-part__soc__icon--fb" href="#"><img src="static/img/icons/fb.svg" width="20" height="20" alt="FB icon">Facebook</a><a class="links-part__soc__icon links-part__soc__icon--ok" href="#"><img src="static/img/icons/ok.svg" width="20" height="20" alt="OK icon">OK</a><a class="links-part__soc__icon links-part__soc__icon--vk" href="#"><img src="static/img/icons/vk.svg" width="20" height="20" alt="VK icon">VK</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="block-articles__items__box">
+              <div class="image-block"><a href="#"><img src="static/img/article-img-1.jpg" alt="Article image"></a></div>
+              <div class="content-block">
+                <div class="text-part">
+                  <h3>Что вы получаете в результате энергоаудита?</h3>
+                  <p>
+                    проектирование и согласование
+                    проектирование и согласование
+                  </p>
+                </div>
+                <div class="links-part"><a class="links-part__more" href="#">Подробнее</a>
+                  <div class="links-part__soc"><a class="links-part__soc__icon links-part__soc__icon--fb" href="#"><img src="static/img/icons/fb.svg" width="20" height="20" alt="FB icon">Facebook</a><a class="links-part__soc__icon links-part__soc__icon--ok" href="#"><img src="static/img/icons/ok.svg" width="20" height="20" alt="OK icon">OK</a><a class="links-part__soc__icon links-part__soc__icon--vk" href="#"><img src="static/img/icons/vk.svg" width="20" height="20" alt="VK icon"></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="block-articles__items__box">
+              <div class="image-block"><a href="#"><img src="static/img/article-img-1.jpg" alt="Article image"></a></div>
+              <div class="content-block">
+                <div class="text-part">
+                  <h3>Что вы получаете в результате энергоаудита?</h3>
+                  <p>
+                    проектирование и согласование
+                    проектирование и согласование
+                  </p>
+                </div>
+                <div class="links-part"><a class="links-part__more" href="#">Подробнее</a>
+                  <div class="links-part__soc"><a class="links-part__soc__icon links-part__soc__icon--fb" href="#"><img src="static/img/icons/fb.svg" width="20" height="20" alt="FB icon">Facebook</a><a class="links-part__soc__icon links-part__soc__icon--ok" href="#"><img src="static/img/icons/ok.svg" width="20" height="20" alt="OK icon">OK</a><a class="links-part__soc__icon links-part__soc__icon--vk" href="#"><img src="static/img/icons/vk.svg" width="20" height="20" alt="VK icon"></a></div>
+                </div>
+              </div>
+            </div>
+          </div><a class="block-articles__more">Все статьи</a>
+        </div>
+        <div class="block-news">
+          <h2>Новости</h2>
+          <p>Последние новости</p>
+          <div class="image-block"><img src="static/img/fb-community.jpg" alt="Facebook image"></div>
+        </div>
+      </div>
+    </section>
     <footer>
-      <div class="footer-content"><img src="static/img/footer-logo.png">
-        <ul>
-          <li><a>Главная</a><br><a>O Компании</a></li>
-          <li><a>Главная</a><br><a>O Компании</a></li>
-          <li><a>Гарантия</a><br><a>Вакансии</a></li>
-          <li><a>Обьекты</a><br><a>Информация</a></li>
-          <li><a>Сертификаты</a><br><a>Контакты</a></li>
-          <li><a>Киев: 095 686 89 67</a><br><a>Харьков: 095 686 89 67</a></li>
-          <li><img src="static/img/footer-logo-intelecrus.png"></li>
-        </ul>
+      <div class="footer-content">
+        <div class="footer-content__top">
+          <div class="footer-content__top__logo"><a href="#"><img src="static/img/footer-logo.png"></a></div>
+          <div class="footer-content__top__soc"><a class="social-icon social-icon--in" href="#"><img src="static/img/icons/in-hover.svg" width="30" height="30" alt="LinkedIn icon">LinkedIn</a><a class="social-icon social-icon--fb" href="#"><img src="static/img/icons/fb-hover.svg" width="30" height="30" alt="Facebook icon">Facebook</a><a class="social-icon social-icon--ok" href="#"><img src="static/img/icons/ok-hover.svg" width="30" height="30" alt="OK icon">Ok</a><a class="social-icon social-icon--vk" href="#"><img src="static/img/icons/vk-hover.svg" width="30" height="30" alt="Vk icon">Vk</a></div>
+        </div>
+        <div class="footer-content__bottom">
+          <ul class="footer-list">
+            <li><a href="#">Главная</a><br><a href="#">O Компании</a></li>
+            <li><a href="#">Гарантия</a><br><a href="#">Вакансии</a></li>
+            <li><a href="#">Объекты</a><br><a href="#">Информация</a></li>
+            <li><a href="#">Сертификаты</a><br><a href="#">Контакты</a></li>
+          </ul>
+          <div class="footer-phones"><a href="#"><span>Киев: &nbsp;</span>095 686 89 67</a><br><a href="#"><span>Харьков: &nbsp;</span>095 686 89 67</a></div>
+          <div class="footer-content__bottom__logo"><a href="#"><img src="static/img/footer-logo-intelecrus.png"></a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-content">
+          <p>&copy; ООО "Инженерный центр "ЭкоЭнергоПроект" 1994-2016 гг.</p>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Правила использования сайта</a></li>
+              <li><a href="#">Торговая марка</a></li>
+              <li><a href="#">Карта сайта</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </footer>
   </body>
@@ -391,5 +714,6 @@
   <script src="static/js/jquery.flexslider.js"></script>
   <script src="static/js/modernizr.js"></script>
   <script src="static/js/jcanvas.min.js"></script>
+  <script src="static/js/canvas.js"></script>
   <script src="static/js/main.js"></script>
 </html>

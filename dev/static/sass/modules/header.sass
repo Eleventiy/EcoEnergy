@@ -1,115 +1,373 @@
+canvas.line-canvas
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 2
+	width: 100%
+	height: 100%
+
+.svg-line
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	max-width: 95%
+	max-height: 95%
+	margin: auto
+	.rect
+		fill-opacity: 0
+		stroke: #FFFFFF
+		stroke-linejoin: round
+		stroke-dasharray: 1500
+		stroke-dashoffset: 1500
+		animation: dash 2s linear forwards
+		animation-delay: 1.5s
+	.line
+		stroke: #575c60
+		stroke-width: 1px
+		stroke-dasharray: 1000
+		stroke-dashoffset: 1000
+		animation: dash 2s linear forwards
+
+
+@keyframes dash
+	to
+		stroke-dashoffset: 0
+
+@keyframes dasharray
+	to
+		stroke-dashoffset: 0
+		stroke-dasharray: 0
+
+
 .main-header
 	position: relative
 	overflow: hidden
-
 	max-width: 1920px
 	height: 850px
 	margin: auto
-
 	background: #21140e url('../img/background.png') no-repeat
 	background-size: cover
-
-.top-line
-	padding: 20px 0 30px
-	&__logo
+	.container
 		position: relative
-		a
-			text-decoration: none
-		&__text
-			position: absolute
-			right: 30px
-			bottom: 10px
-			color: #b7c24a
-			font-size: 18px
-			line-height: 9px
-	&__center
-		display: flex
-		flex-direction: column
-		justify-content: space-between
-		//flex-wrap: wrap
-		height: 75px
-		&__contacts
-			display: flex
-			justify-content: space-between
-			align-items: center
-		&__search
-			form
-				position: relative
-			input
-				box-sizing: border-box
+		z-index: 3
+		height: 100%
+	.top-line
+		padding: 20px 0 25px
+		&--fixed
+			position: fixed
+			top: 0
+			left: 0
+			z-index: 999
+			width: 100%
+			height: 85px
+			padding: 5px 0
+			background: #000000
+			box-shadow: 1px 10px 10px rgba(0,0,0,.5)
+			.row
+				max-width: 1375px
+				margin: 0 auto
+				align-items: center
+			.top-line__logo
+				flex: 0 0 18.1%
+				&--thumb
+					display: none
+				&--thumbnail
+					display: block
+				&__text
+					display: none
+			.top-line__center
+				flex: 0 0 50.1%
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				&__nav
+					position: relative
+					top: 2px
+					left: -2px
+					flex: 0 0 65.5%
+				&__contacts
+					order: 2
+				&__filter
+					display: none
+			.top-line__call
+				margin: 0
+				a
+					height: 51px
+			.top-line__burger
 				display: block
-				padding: 10px 20px 10px 0
-				color: #ffffff
-				font-family: "Roboto", sans-serif
-				font-size: 16.55px
-				font-weight: 300
-				line-height: 20.43px
-				border: none
-				border-bottom: 1px solid #ffffff
-				background: transparent
-				outline: none
-			button[type="submit"]
+		&__logo
+			position: relative
+			//width: 30.33%
+			flex: 0 0 30.33%
+			padding-left: 13px
+			a
+				text-decoration: none
+			&__text
 				position: absolute
-				top: 50%
-				right: 0
-				width: 16px
-				height: 16px
-				border: none
-				background: transparent url('../img/icons/search.png') no-repeat
-				outline: none
-				cursor: pointer
-				transform: translateY(-50%)
-		&__nav
-			ul
+				left: 76px
+				bottom: 8px
+				color: #b7c24a
+				font-size: 18px
+				line-height: 9px
+			&--thumbnail
+				display: none
+		&__center
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			//width: 33.33%
+			flex: 0 0 33.33%
+			height: 73px
+			padding-left: 11px
+			&__contacts
 				display: flex
 				justify-content: space-between
 				align-items: center
-				margin: 0
-				padding: 0
-				list-style: none
-				li
+			&__filter
+				.filter-column
 					display: inline-block
-				a
+				label
+					display: inline-block
+					padding-top: 12px
 					color: #ffffff
-					font-size: 15px
+					font-size: 18px
+					font-weight: 300
 					line-height: 9px
-					text-decoration: none
-					&:hover
-						text-decoration: underline
-	&__call
-		align-self: center
-		text-align: center
-		a
-			position: relative
-			display: inline-block
-			padding: 10px 25px 10px 45px
-			color: #ffffff
-			font-family: "Open Sans", sans-serif
-			font-size: 17px
-			font-weight: 300
-			border: 1px solid #ffffff
-			text-decoration: none
-			&:hover
+				.filter_news_custom_select
+					position: relative
+					display: inline-block
+					color: #ffffff
+					font-size: 17px
+					font-weight: 300
+					line-height: 19.83px
+					margin-left: 12px
+					margin-right: 21px
+					.filter_news_custom_option
+						position: absolute
+						display: none
+						min-width: 180px
+						padding: 15px
+						margin: 0
+						list-style-type: none
+						background: rgba(254,254,254,1)
+						border-radius: 0 0 14px 14px
+						li
+							padding: 5px
+				// Стилизация select
+				.select-hidden
+					display: none
+					visibility: hidden
+				.select
+					position: relative
+					display: inline-block
+					width: 160px
+					height: 17px
+					margin-left: 5px
+					color: #fff
+					font-weight: 300
+					cursor: pointer
+					letter-spacing: 0.3px
+				.select-styled
+					position: absolute
+					top: 0
+					right: 0
+					bottom: 0
+					left: 0
+					transition: all 0.2s ease-in
+					&::after
+						content: ""
+						position: absolute
+						top: 50%
+						right: 38px
+						width: 0
+						height: 0
+						border-left: 5px solid transparent
+						border-right: 5px solid transparent
+						border-top: 5px solid #ffffff
+				.select-options
+					box-sizing: border-box
+					position: absolute
+					top: 25px
+					right: 0
+					left: 0
+					z-index: 999
+					display: none
+					margin: 0
+					padding: 15px
+					color: #ffffff
+					text-align: center
+					font-weight: 600
+					list-style: none
+					background-color: rgba(#000000, .4)
+					box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.5)
+					li
+						margin: 0
+						padding: 5px
+						transition: all 0.15s ease-in
+						line-height: 2
+						&:hover
+							opacity: .6
+						&[rel="hide"]
+							display: none
+			&__search
+				form
+					position: relative
+				input
+					box-sizing: border-box
+					display: block
+					padding: 2px 9px 10px 0
+					color: #ffffff
+					font-family: "Roboto", sans-serif
+					font-size: 16.55px
+					font-weight: 300
+					line-height: 20.43px
+					border: none
+					border-bottom: 1px solid #ffffff
+					background: transparent
+					outline: none
+				button[type="submit"]
+					position: absolute
+					top: 5px
+					right: 0
+					width: 16px
+					height: 16px
+					border: none
+					background: transparent url('../img/icons/search.png') no-repeat
+					outline: none
+					cursor: pointer
+			&__nav
+				ul
+					display: flex
+					justify-content: space-between
+					align-items: center
+					margin: 0
+					padding: 0
+					list-style: none
+					a
+						color: #ffffff
+						font-size: 15px
+						line-height: 9px
+						text-decoration: none
+						&:hover
+							text-decoration: underline
+		&__burger
+			display: none
+			flex: 0 0 6%
+			.burger-bav-link
+				position: relative
+				left: -5px
+				top: 4px
+				display: block
+				text-decoration: none
+				cursor: pointer
 				&::before
-					animation: drag-phone .5s infinite
-			&::before
-				content: ''
+					content: ''
+					position: absolute
+					top: -11px
+					right: 42px
+					width: 31px
+					height: 17px
+					background: transparent url('../img/icons/burger.png') no-repeat
+			.burger-nav
+				display: none
+				position: absolute
+				top: 39px
+				right: 31px
+				z-index: 999
+				width: 300px
+				padding: 10px 0
+				background: #000000
+				ul
+					margin: 0
+					padding: 0
+					list-style: none
+					li
+						padding: 15px 40px
+						font-size: 15px
+						font-weight: 300
+						line-height: 1.43
+						a
+							display: block
+							width: 100%
+							color: #ffffff
+							text-decoration: none
+							transition: .15s linear
+							&:hover
+								color: #a0b73f
+		&__call
+			align-self: center
+			//width: 20.33%
+			flex: 0 0 20.33%
+			margin: auto
+			margin-left: 100px
+			text-align: center
+			a
+				position: relative
+				top: 3px
+				display: inline-block
+				height: 52px
+				padding: 11px 25px 11px 45px
+				color: #ffffff
+				font-family: "Open Sans", sans-serif
+				font-size: 17px
+				font-weight: 300
+				border: 1px solid #ffffff
+				text-decoration: none
+				&:hover
+					&::before
+						animation: drag-phone .5s infinite
+				&::before
+					content: ''
+					position: absolute
+					top: 17px
+					left: 21px
+					width: 14px
+					height: 14px
+					background: transparent url('../img/icons/phone.png') no-repeat
+		&__right
+			align-self: center
+			//width: 5.33%
+			flex: 0 0 5.33%
+			cursor: pointer
+		&__lang
+			position: relative
+			top: 2px
+			left: -1px
+			color: #ffffff
+			font-size: 18px
+			line-height: 8px
+			&::after
+				content: ""
 				position: absolute
 				top: 50%
-				left: 20px
-				width: 14px
-				height: 14px
-				margin-top: -7px
-				background: transparent url('../img/icons/phone.png') no-repeat
+				left: 27px
+				width: 0
+				height: 0
+				border-left: 5px solid transparent
+				border-right: 5px solid transparent
+				border-top: 5px solid #ffffff
+				transform: translateY(-50%)
+			&__list
+				box-sizing: border-box
+				display: none
+				position: absolute
+				top: 25px
+				right: 8px
+				z-index: 999
+				width: 100px
+				margin: 0
+				padding: 0
+				text-align: center
+				list-style: none
+				background-color: rgba(#000000, 0.4)
+				box-shadow: rgba(#000000, 0.5) 1px 10px 15px 0
+				li
+					padding: 20px
+					transition: .25s linear
+					&:hover
+						color: #010101
+						background: #ccc
 
-@keyframes drag-phone
-	0%
-		transform: rotate(10deg)
-	25%
-		transform: rotate(-10deg)
-	50%
-		transform: rotate(10deg)
-	75%
-		transform: rotate(-10deg)
-	100%
-		transform: rotate(10deg)
+@import "slider"

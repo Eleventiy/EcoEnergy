@@ -10,14 +10,13 @@ html(lang='ru')
 		// Загрузка стилей
 		link(href='static/css/bootstrap-grid.min.css', rel='stylesheet')
 		link(href='static/css/style.css', rel='stylesheet')
-		//link(href='static/css/responsive.css', rel='stylesheet')
 		link(href='static/css/flexslider.css', rel='stylesheet')
 
 	title
 		block title
 
 	body
-		//include ../modules/header
+		include ../modules/header
 		block content
 		include ../modules/footer
 
@@ -27,4 +26,5 @@ html(lang='ru')
 	script(src='static/js/jquery.flexslider.js')
 	script(src='static/js/modernizr.js')
 	script(src='static/js/jcanvas.min.js')
+	script(src='static/js/canvas.js')
 	script(src='static/js/main.js')

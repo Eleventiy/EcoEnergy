@@ -1,29 +1,115 @@
 footer
+	box-sizing: border-box
 	max-width: 1920px
+	height: 331px
 	margin: auto
-	background: black
-	padding-top: 45px
-	padding-bottom: 50px
+	padding-top: 22px
+	padding-bottom: 35px
+	background: #000000
 	.footer-content
-		max-width: 1030px
-		margin: auto
-		color: white
-		img
-			margin-bottom: 12px
-		ul
-			width: 100%
-			list-style-type: none
-			border-top: 1px solid white
-			padding: 0
+		max-width: 1088px
+		margin-right: auto
+		margin-left: 21.8%
+		color: #ffffff
+		&__top
+			box-sizing: border-box
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding-bottom: 28px
+			border-bottom: 2px solid #ffffff
+			&__logo
+				flex: 0 0 75%
+			&__soc
+				align-self: flex-end
+				flex: 0 0 13.7%
+				display: flex
+				justify-content: space-between
+				align-items: center
+				.social-icon
+					align-self: center
+					position: relative
+					width: 30px
+					height: 30px
+					font-size: 0
+					margin-right: 20px
+		&__bottom
+			display: flex
+			//justify-content: space-between
+			align-items: center
+			padding: 20px 0
+			padding-bottom: 46px
+			ul
+				flex: 0 0 53%
+				width: 100%
+				margin: 0
+				list-style-type: none
+				padding: 0
 			li
 				display: inline-block
 				font-size: 14px
 				font-family: 'Roboto', sans-serif
 				font-weight: 300
 				line-height: 24px
-				padding-left: 49px
+				padding-left: 65px
 				&:first-child
 					padding-left: 0
-				&:last-child
+				a
+					color: #ffffff
+					text-decoration: none
+					&:hover
+						text-decoration: underline
+			.footer-phones
+				box-sizing: border-box
+				flex: 0 0 23.8%
+				padding-left: 50px
+				border: 2px solid #ffffff
+				border-top: none
+				border-bottom: none
+				a
+					color: #ffffff
+					text-decoration: none
+					span
+						font-weight: 400
+			&__logo
+				margin: 0 auto
+	.footer-bottom
+		//box-sizing: border-box
+		//height: 93px
+		padding: 13px 0
+		background: #858688
+		.footer-content
+			display: flex
+			justify-content: space-between
+			align-items: center
+			p
+				color: #000000
+				font-weight: 400
+			nav.footer-nav
+				flex: 0 0 52%
+			ul
+				display: flex
+				justify-content: space-between
+				width: 100%
+				margin: 0
+				padding: 0
+				list-style: none
+				li
 					position: relative
-					top: 16px
+					&::before
+						content: ''
+						position: absolute
+						top: 0
+						right: -15px
+						height: 100%
+						width: 1px
+						background: #000000
+					&:last-child::before
+						display: none
+				a
+					color: #000000
+					font-weight: 400
+					text-transform: uppercase
+					text-decoration: none
+					&:hover
+						text-decoration: underline

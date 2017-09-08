@@ -1,30 +1,60 @@
 footer
 	.footer-content
-		img(src='static/img/footer-logo.png')
-		ul
-			li
-				a Главная
+		.footer-content__top
+			.footer-content__top__logo
+				a(href='#')
+					img(src='static/img/footer-logo.png')
+			.footer-content__top__soc
+				a(class='social-icon social-icon--in' href='#')
+					img(src='static/img/icons/in-hover.svg' width='30' height='30' alt='LinkedIn icon')
+					| LinkedIn
+				a(class='social-icon social-icon--fb' href='#')
+					img(src='static/img/icons/fb-hover.svg' width='30' height='30' alt='Facebook icon')
+					| Facebook
+				a(class='social-icon social-icon--ok' href='#')
+					img(src='static/img/icons/ok-hover.svg' width='30' height='30' alt='OK icon')
+					| Ok
+				a(class='social-icon social-icon--vk' href='#')
+					img(src='static/img/icons/vk-hover.svg' width='30' height='30' alt='Vk icon')
+					| Vk
+		.footer-content__bottom
+			ul.footer-list
+				li
+					a(href='#') Главная
+					br
+					a(href='#') O Компании
+				li
+					a(href='#') Гарантия
+					br
+					a(href='#') Вакансии
+				li
+					a(href='#') Объекты
+					br
+					a(href='#') Информация
+				li
+					a(href='#') Сертификаты
+					br
+					a(href='#') Контакты
+			.footer-phones
+				a(href='#')
+					span Киев: &nbsp;
+					| 095 686 89 67
 				br
-				a O Компании
-			li
-				a Главная
-				br
-				a O Компании
-			li
-				a Гарантия
-				br
-				a Вакансии
-			li
-				a Обьекты
-				br
-				a Информация
-			li
-				a Сертификаты
-				br
-				a Контакты
-			li
-				a Киев: 095 686 89 67
-				br
-				a Харьков: 095 686 89 67
-			li
-				img(src='static/img/footer-logo-intelecrus.png')
+				a(href='#')
+					span Харьков: &nbsp;
+					| 095 686 89 67
+			.footer-content__bottom__logo
+				a(href='#')
+					img(src='static/img/footer-logo-intelecrus.png')
+	.footer-bottom
+		.footer-content
+			p
+				| &copy; ООО "Инженерный центр "ЭкоЭнергоПроект" 1994-2016 гг.
+			nav.footer-nav
+				ul
+					li
+						a(href='#') Правила использования сайта
+					li
+						a(href='#') Торговая марка
+					li
+						a(href='#') Карта сайта

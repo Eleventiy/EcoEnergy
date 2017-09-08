@@ -1,0 +1,211 @@
+header.main-header
+	canvas#LinesCanvas.line-canvas(width='1920', height='850')
+
+	include ../modules/svg-draw
+
+	.container
+		.top-line#topLine
+			.row
+				.top-line__logo
+					a(href="#")
+						img(class='top-line__logo--thumb' src='static/img/top-logo.png' alt='Big logo')
+						img(class='top-line__logo--thumbnail' src='static/img/bottom-logo.png' alt='Small logo')
+						span.top-line__logo__text Эксперт в сжигании биомассы
+
+				.top-line__center
+					.top-line__center__contacts
+						.top-line__center__filter.filter
+							label Киев:
+							select.filter-news-select(name='region')
+								option(value='hide') 095 686 89 67
+								option(value='number-1') 095 686 89 68
+								option(value='number-2') 095 686 89 69
+								option(value='number-3') 095 686 89 70
+						.top-line__center__search
+							form(action="#" method="post")
+								input(type="text" placeholder="Поиск по сайту")
+								button(type="submit")
+					nav.top-line__center__nav
+						ul
+							li
+								a(href="#") Главная
+							li
+								a(href="#") О компании
+							li
+								a(href="#") Объекты
+							li
+								a(href="#") Информация
+							li
+								a(href="#") Контакты
+
+				.top-line__call
+					a(href="#") Звонок с сайта
+
+				.top-line__burger
+					#burgerNavLink.burger-bav-link
+						// Всплывающее меню
+						nav#burgerNav.burger-nav
+							ul
+								li
+									a(href="#") Энергетический аудит, менеджмент, консалтинг
+								li
+									a(href="#") Проектный менеджмент
+								li
+									a(href="#") Инжиниринг
+								li
+									a(href="#") Промышленные твердотопливные котли
+								li
+									a(href="#") Бытовые пеплетные котлы
+								li
+									a(href="#") Паровые твердотопливные котлы и котлоагрегаты
+								li
+									a(href="#") Воздушные теплогенераторы на твердом топливе
+								li
+									a(href="#") Котельно-вспомогогательное оборудование
+
+				.top-line__right
+					#topLangLink.top-line__lang
+						span RU
+						ul#topLangOptions.top-line__lang__list
+							li(data-value='') RU
+							li(data-value='1') EN
+							li(data-value='2') UA
+
+		.slider
+			#slider.flexslider
+				ul.slides
+					li.slide-li
+						ul.info-enclosed
+							li.text-li
+								ul.enclosed-ul
+									li
+										p Технико-экономические расчеты
+									li
+										p Проектирование
+									li
+										p Авторский надзор
+									li
+										p Технический надзор
+					li.slide-li.slide-1
+						ul.info-enclosed
+							li.text-li
+								ul.enclosed-ul
+									li
+										p Технико-экономические расчеты
+									li
+										p Проектирование
+									li
+										p Авторский надзор
+									li
+										p Технический надзор
+					li.slide-li.slide-2
+						ul.info-enclosed
+							li.text-li
+								ul.enclosed-ul
+									li
+										p Технико-экономические расчеты
+									li
+										p Проектирование
+									li
+										p Авторский надзор
+									li
+										p Технический надзор
+					li.slide-li.slide-3
+						ul.info-enclosed
+							li.text-li
+								ul.enclosed-ul
+									li
+										p Технико-экономические расчеты
+									li
+										p Проектирование
+									li
+										p Авторский надзор
+									li
+										p Технический надзор
+					li.slide-li.slide-4
+						ul.info-enclosed
+							li.text-li
+								ul.enclosed-ul
+									li
+										p Технико-экономические расчеты
+									li
+										p Проектирование
+									li
+										p Авторский надзор
+									li
+										p Технический надзор
+					li.slide-li.slide-4
+						ul.info-enclosed
+							li.text-li
+								ul.enclosed-ul
+									li
+										p Технико-экономические расчеты
+									li
+										p Проектирование
+									li
+										p Авторский надзор
+									li
+										p Технический надзор
+					li.slide-li.slide-5
+						ul.info-enclosed
+							li.text-li
+								ul.enclosed-ul
+									li
+										p Технико-экономические расчеты
+									li
+										p Проектирование
+									li
+										p Авторский надзор
+									li
+										p Технический надзор
+					li.slide-li.slide-6
+						ul.info-enclosed
+							li.text-li
+								ul.enclosed-ul
+									li
+										p Технико-экономические расчеты
+									li
+										p Проектирование
+									li
+										p Авторский надзор
+									li
+										p Технический надзор
+			.flexslider-controls
+				ol.flex-control-nav
+					li.slide-text-1
+						p
+							| Энергетический аудит,
+							br
+							| менеджмент, консалтинг
+					li.slide-text-2
+						p
+							| Проектный
+							br
+							| менеджмент
+					li.slide-text-3
+						p Инжиниринг
+					li.slide-text-4
+						p
+							| Промышленные твердотопливные
+							br
+							| котлы на биомассе
+					li.slide-text-5
+						p
+							| Бытовые пеллетные котлы
+							br
+							| и камины
+					li.slide-text-6
+						p
+							| Паровые котлы
+							br
+							| на твердом топливе
+					li.slide-text-7
+						p
+							| Воздушные теплогенераторы
+							br
+							| на твердом топливе
+					li.slide-text-8
+						p
+							| Котельно-вспомагательное
+							br
+							| оборудование
