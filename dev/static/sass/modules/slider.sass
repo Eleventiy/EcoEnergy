@@ -1,0 +1,259 @@
+.slider
+	position: relative
+	display: flex
+	width: 100%
+	.flexslider-controls
+		flex: 0 0 70%
+	#slider
+		order: 2
+		margin-bottom: 0
+		margin-left: 19px
+		background: transparent
+		border: none
+		.slides
+			width: 275px
+			height: 277px
+			margin: auto
+			.slide-li
+				.info-enclosed
+					margin: 0
+					padding: 0
+					list-style: none
+					li
+						width: 100%
+						.enclosed-ul
+							box-sizing: border-box
+							max-width: 277px
+							padding: 48px 18px 23px
+							opacity: 1
+							list-style: none
+							li
+								position: relative
+								padding-left: 30px
+								color: #ffffff
+								overflow: hidden
+								animation: slide-down 1s
+								animation-fill-mode: forwards
+								opacity: 0
+								padding-bottom: 19px
+								&:nth-child(1)
+									animation-delay: 0.8s
+								&:nth-child(2)
+									animation-delay: 0.6s
+								&:nth-child(3)
+									animation-delay: 0.4s
+								&:nth-child(4)
+									animation-delay: 0.2s
+								&::before
+									content: ''
+									position: absolute
+									top: 50%
+									left: 2px
+									width: 9px
+									height: 9px
+									margin-top: -16px
+									background: transparent url('../img/section-welcome/list-dot_white.png') no-repeat
+								p
+									font-family: "Roboto", sans-serif
+									font-weight: 300
+									font-size: 18px
+									margin: 0
+									color: white
+					.image-li
+						margin-left: 0
+						float: right
+						margin-top: -2px
+						.image-slider
+							float: right
+							background-image: url('../img/image-slider.png')
+							background-repeat: no-repeat
+							background-size: cover
+							width: 274px
+							height: 274px
+							border: 2px solid white
+							margin-right: -6px
+							opacity: 1
+							animation-name: opacity
+							animation-duration: 0.9s
+				.sub-title
+					clear: both
+					font-size: 20px
+					font-family: "Roboto", sans-serif
+					font-weight: 600
+					color: #b7c24a
+					position: relative
+					top: -74px
+					margin-left: -7px
+					animation-name: opacity
+					animation-duration: 1.8s
+				h1
+					font-family: "Roboto", sans-serif
+					font-size: 55px
+					font-weight: 600
+					color: white
+					position: relative
+					top: -104px
+					margin-left: -7px
+					animation-name: opacity
+					animation-duration: 1.8s
+				.read-more-button
+					text-align: center
+					line-height: 60px
+					display: block
+					width: 274px
+					height: 60px
+					color: white
+					text-transform: uppercase
+					font-family: "Roboto", sans-serif
+					font-weight: 400
+					font-size: 20px
+					border: 2px solid white
+					transition: 0.3s ease-in-out
+					margin-top: -100px
+					animation-name: opacity
+					animation-duration: 2s
+					margin-left: -6px
+					&:hover
+						border-color: #b7c24a
+						color: #b7c24a
+			.slide-4
+				.image-slider
+					float: right
+					background-image: url('../img/contact-us-support.png')!important
+					background-repeat: no-repeat
+					background-size: cover
+					width: 274px
+					height: 274px
+	#carousel
+		margin-top: 30px
+		margin-left: 5.1%
+		width: 29%
+		background: none
+		border: none
+		.slides
+			li
+				display: block
+				float: none!important
+				line-height: 67px
+		.flex-direction-nav
+			display: none!important
+	.flex-direction-nav
+		display: none!important
+	.flexslider-controls
+		.flex-control-nav
+			width: 32%
+			position: relative
+			top: 32px
+			li
+				position: relative
+				text-align: left
+				width: 360px
+				margin: 0
+				padding-left: 75px
+				font-size: 17px
+				line-height: 23px
+				cursor: pointer
+				p
+					width: 100%
+					margin: 0
+					font-family: "Roboto", sans-serif
+					font-weight: 300
+					letter-spacing: 0.2px
+					color: white
+					transition: 0.18s ease-in-out
+				&::before
+					content: ''
+					position: absolute
+					top: 50%
+					left: 0
+					transition: 0.18s ease-in-out
+				&:nth-child(1)
+					padding-bottom: 28px
+					&::before
+						top: 21px
+						left: 3px
+						width: 41px
+						height: 48px
+						margin-top: -24px
+						background: transparent url('../img/icons/slide-1.png') no-repeat
+				&:nth-child(2)
+					padding-bottom: 36px
+					&::before
+						top: 22px
+						left: -2px
+						width: 52px
+						height: 46px
+						margin-top: -23px
+						background: transparent url('../img/icons/slide-2.png') no-repeat
+				&:nth-child(3)
+					padding-bottom: 39px
+					&::before
+						top: 10px
+						left: -3px
+						width: 54px
+						height: 48px
+						margin-top: -24px
+						background: transparent url('../img/icons/slide-3.png') no-repeat
+				&:nth-child(4)
+					padding-bottom: 32px
+					&::before
+						top: 20px
+						left: -15px
+						width: 72px
+						height: 52px
+						margin-top: -26px
+						background: transparent url('../img/icons/slide-4.png') no-repeat
+				&:nth-child(5)
+					padding-bottom: 39px
+					&::before
+						top: 19px
+						left: 2px
+						width: 45px
+						height: 52px
+						margin-top: -26px
+						background: transparent url('../img/icons/slide-5.png') no-repeat
+				&:nth-child(6)
+					padding-bottom: 39px
+					&::before
+						top: 19px
+						left: 5px
+						width: 37px
+						height: 56px
+						margin-top: -23px
+						background: transparent url('../img/icons/slide-6.png') no-repeat
+				&:nth-child(7)
+					padding-bottom: 28px
+					&::before
+						top: 23px
+						left: -5px
+						width: 58px
+						height: 48px
+						margin-top: -24px
+						background: transparent url('../img/icons/slide-7.png') no-repeat
+				&:nth-child(8)::before
+					top: 22px
+					left: 3px
+					width: 43px
+					height: 48px
+					margin-top: -24px
+					background: transparent url('../img/icons/slide-8.png') no-repeat
+			li:hover,
+			.flex-active
+				p
+					color: #b7c24a
+				&:nth-child(1)::before
+					background: transparent url('../img/icons/slide-1_hover.png') no-repeat
+				&:nth-child(2)::before
+					background: transparent url('../img/icons/slide-2_hover.png') no-repeat
+				&:nth-child(3)::before
+					background: transparent url('../img/icons/slide-3_hover.png') no-repeat
+				&:nth-child(4)::before
+					background: transparent url('../img/icons/slide-4_hover.png') no-repeat
+				&:nth-child(5)::before
+					background: transparent url('../img/icons/slide-5_hover.png') no-repeat
+				&:nth-child(6)::before
+					background: transparent url('../img/icons/slide-6_hover.png') no-repeat
+				&:nth-child(7)::before
+					background: transparent url('../img/icons/slide-7_hover.png') no-repeat
+				&:nth-child(8)::before
+					background: transparent url('../img/icons/slide-8_hover.png') no-repeat
