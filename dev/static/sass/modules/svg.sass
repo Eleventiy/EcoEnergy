@@ -1,0 +1,91 @@
+.svg-wrap
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	max-width: 100%
+	max-height: 100%
+	.svg-line
+		stroke: #ffffff
+		stroke-width: 1px
+		stroke-dasharray: 900
+		stroke-dashoffset: 1000
+		stroke-opacity: 0
+		&.animated
+			animation: dashoffset 2s linear forwards
+	.svg-rect
+		fill-opacity: 0
+		stroke: #ffffff
+		stroke-width: 1px
+		stroke-dashoffset: 1085
+		stroke-opacity: 0
+	.svg-rect-1
+		stroke-dasharray: 1085
+		&.animated
+			animation: drawrect-1 2s 1.5s linear forwards
+	.svg-rect-2
+		stroke-dasharray: 1048
+		&.animated
+			animation: drawrect-2 2s 2.5s linear forwards
+	.svg-rect-3
+		stroke-dasharray: 1011
+		&.animated
+			animation: drawrect-2 2s 2.5s linear forwards
+	.svg-rect-4
+		stroke-dasharray: 1011
+		&.animated
+			animation: drawrect-2 2s 2.5s linear forwards
+	.svg-rect-5
+		stroke-dasharray: 1011
+		&.animated
+			animation: drawrect-2 2s 2.5s linear forwards
+	.svg-rect-6
+		stroke-dasharray: 1011
+		&.animated
+			animation: drawrect-2 2s 2.5s linear forwards
+	.svg-rect-7
+		stroke-dasharray: 1011
+		&.animated
+			animation: drawrect-2 2s 2.5s linear forwards
+	.svg-rect-8
+		stroke-dasharray: 1011
+		&.animated
+			animation: drawrect-2 2s 2.5s linear forwards
+
+@keyframes drawrect-1
+	from
+		stroke-opacity: 1
+		stroke-dasharray: 1085
+		stroke-dashoffset: 1085
+	to
+		stroke-opacity: 1
+		stroke-dasharray: 1200
+		stroke-dashoffset: 0
+
+@keyframes drawrect-2
+	from
+		stroke-opacity: 1
+		stroke-dasharray: 1048
+		stroke-dashoffset: 1085
+	to
+		stroke-opacity: 1
+		stroke-dasharray: 1200
+		stroke-dashoffset: 0
+
+@keyframes drawrect-3
+	from
+		stroke-opacity: 1
+		stroke-dasharray: 1011
+		stroke-dashoffset: 1085
+	to
+		stroke-opacity: 1
+		stroke-dasharray: 1200
+		stroke-dashoffset: 0
+
+@keyframes dashoffset
+	from
+		stroke-opacity: 0.5
+	to
+		stroke-opacity: 0.5
+		stroke-dashoffset: 0

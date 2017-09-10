@@ -1,4 +1,5 @@
 window.onload = function() {
+	
 	//
 	// ## Canvas lines ##
 	//
@@ -35,7 +36,7 @@ window.onload = function() {
   // Animate layer properties
 	$LinesCanvas.animateLayer('Line1', {
 		width: 4000, height: 1
-	}, 1000, function(layer) {
+	}, 2000, function(layer) {
 		// Callback function
 		$(this).animateLayer(layer, {
 
@@ -43,7 +44,7 @@ window.onload = function() {
 	});
 	$LinesCanvas.animateLayer('Line2', {
 		height: 3570,
-	}, 1000, function(layer) {
+	}, 2000, function(layer) {
 		// Callback function
 		$(this).animateLayer(layer, {
 
@@ -51,7 +52,7 @@ window.onload = function() {
 	});
 	$LinesCanvas.animateLayer('Line3', {
 		height: 3570,
-	}, 1000, function(layer) {
+	}, 2000, function(layer) {
 		// Callback function
 		$(this).animateLayer(layer, {
 
@@ -59,7 +60,7 @@ window.onload = function() {
 	});
 	$LinesCanvas.animateLayer('Line4', {
 		height: 3570,
-	}, 1000, function(layer) {
+	}, 2000, function(layer) {
 		// Callback function
 		$(this).animateLayer(layer, {
 
@@ -67,34 +68,33 @@ window.onload = function() {
 	});
 	$LinesCanvas.animateLayer('Line5', {
 		height: 970,
-	}, 1000, function(layer) {
+	}, 2000, function(layer) {
 		// Callback function
 		$(this).animateLayer(layer, {
 
 		}, 'slow', 'swing');
 	});
 	
-	// Появление полоски при клике на пункт
-	$(".slider .flexslider-controls .flex-control-nav li.slide-text-1.flex-active").click(function () {
-		for(i = 6; i <= 13; i++) {
-			$LinesCanvas.removeLayer('Line'+i);
-		}
-		$LinesCanvas.drawRect({
-			layer: true,
-			name: 'Line6',
-			fillStyle: '#575c60',
-			x: 915, y: 175,
-			width: 1, height: 1
-		});
-    // Animate layer properties
-		$LinesCanvas.animateLayer('Line6', {
-			width: 670, height: 1
-		}, 1000, function(layer) {
-			// Callback function
-			$(this).animateLayer(layer, {
-			
-			}, 'slow', 'ease-in-out');
-		});
-	});
+	// $(".slider .flexslider-controls .flex-control-nav li.slide-text-1.flex-active").click(function () {
+	// 	for(i = 6; i <= 13; i++) {
+	// 		$LinesCanvas.removeLayer('Line'+i);
+	// 	}
+	// 	$LinesCanvas.drawRect({
+	// 		layer: true,
+	// 		name: 'Line6',
+	// 		fillStyle: '#575c60',
+	// 		x: 915, y: 175,
+	// 		width: 1, height: 1
+	// 	});
+   //  // Animate layer properties
+	// 	$LinesCanvas.animateLayer('Line6', {
+	// 		width: 670, height: 1
+	// 	}, 1000, function(layer) {
+	// 		// Callback function
+	// 		$(this).animateLayer(layer, {
+	//
+	// 		}, 'slow', 'ease-in-out');
+	// 	});
+	// });
 	
 };
